@@ -22,6 +22,10 @@ export default class HTML extends React.Component {
             sizes="180x180"
           />
           <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Belleza"
+            rel="stylesheet"
+          />
         </head>
         <body>
           <div

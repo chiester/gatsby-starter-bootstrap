@@ -6,6 +6,8 @@
 //
 // Color system
 //
+
+
 @import './colors.scss';
 
 // Reassign color vars to semantic color scheme
@@ -88,3 +90,23 @@ img {
 img:hover {
   animation: pulse 0.5s;
 }
+
+img {
+  margin-bottom: 0 !important;
+}
+
+.ccco-header {
+  font-family: 'Belleza' !important;
+  
+  h1 {
+    text-transform: none !important;
+    font-size: 1.25em !important;
+  }
+  .nav-link {
+    text-transform: none !important;
+    font-size: 1em !important;
+  }
+
+}
+
+@import 'now-ui-kit.scss';
