@@ -42,10 +42,10 @@ class Navi extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/about-us/">About Us</Link>
+                <Link to="/About/">About Us</Link>
               </NavItem>
               <NavItem>
-                <Link to="/performances/">Performances</Link>
+                <Link to="/Performances/">Performances</Link>
               </NavItem>
             </Nav>
           </Collapse>

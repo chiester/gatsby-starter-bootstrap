@@ -20,9 +20,6 @@ const BlogIndex = ({ data, location }) => {
           key={i}
         />
       ))}
-      <div class="alert alert-primary" role="alert">
-        This is a primary alert—check it out!
-      </div>
     </Layout>
   )
 }
@@ -37,8 +34,6 @@ export const pageQuery = graphql`
         description
         url: siteUrl
         author
-        twitter
-        adsense
       }
     }
     remark: allMarkdownRemark(
