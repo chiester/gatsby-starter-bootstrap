@@ -1,11 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
-    adsense: '',
+    title: 'Center City Chamber Orchestra',
+    description: 'Official Site of the Center City Chamber Orchestra',
+    siteUrl: 'https://centercitychamberorchestra.com',
+    author: 'chiester',
   },
   pathPrefix: '/',
   plugins: [

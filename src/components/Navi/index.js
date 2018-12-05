@@ -1,34 +1,56 @@
-import React from 'react'
 import { Link } from 'gatsby'
+import React from 'react'
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from 'reactstrap'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 class Navi extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.toggle = this.toggle.bind(this)
+    this.state = {
+      isOpen: false,
+    }
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    })
+  }
   render() {
     const { location, title } = this.props
     return (
-      <nav className="navbar navbar-expand navbar-light flex-column flex-md-row ccco-header">
-        <div className="container">
-          <Link className="text-center" to="/">
-            <img height="50" src="https://hiester.imgix.net/CCOsquare.png" />
-            <h1 className="navbar-brand mb-0">Center City Chamber Orchestra</h1>
-          </Link>
-
-          <div className="navbar-nav flex-row ml-md-auto d-md-d-flex">
-            <ul className="navbar-nav bd-navbar-nav d-flex mr-auto">
-              <li
-                className={
-                  location.pathname === '/about/'
-                    ? 'nav-item active'
-                    : 'nav-item'
-                }
-              >
-                <Link to="/about/" className="nav-link">
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div className="container">
+        <Navbar className="ccco-header" color="light" light expand="md">
+          <NavbarBrand href="/">
+            <img
+              className="ccco-logo"
+              src="https://hiester.imgix.net/CCOsquare.png"
+            />
+            <p className="navbar-brand mb-0" />
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <Link to="/about-us/">About Us</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/performances/">Performances</Link>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     )
   }
 }
