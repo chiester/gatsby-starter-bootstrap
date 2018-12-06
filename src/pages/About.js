@@ -43,7 +43,7 @@ class About extends React.Component {
                 Advisor, and Conductor-in-Residence{' '}
               </ListGroupItem>
               <ListGroupItem>
-                <strong>David Ortiz</strong>, Assistnat Vice President,
+                <strong>David Ortiz</strong>, Assistant Vice President,
                 Assistant Artistic Advisor, and Assistant Conductor{' '}
               </ListGroupItem>
               <ListGroupItem>
