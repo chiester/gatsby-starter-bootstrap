@@ -23,7 +23,7 @@ export default class HTML extends React.Component {
           />
           <link href="/img/CCOsquare.ico" rel="icon" type="image/x-icon" />
           <link
-            href="https://fonts.googleapis.com/css?family=Belleza"
+            href="https://fonts.googleapis.com/css?family=Belleza|Open+Sans"
             rel="stylesheet"
           />
         </head>

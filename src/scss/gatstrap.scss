@@ -59,9 +59,7 @@ $inverse-color: $gray-600 !default;
 $link-decoration: none !default;
 $link-hover-decoration: none !default;
 
-// Fonts
-//
-@import './fonts.scss';
+
 
 
 
@@ -69,6 +67,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 * {
@@ -108,18 +107,41 @@ img {
 
 .nav-item {
   padding: 0 12px;
-  a {
-    text-decoration:none;
-    color: #999;
-  }
-  a:hover {
-    color: #000;
-    transition: color 500ms ease;
-  }
+ 
+}
+
+
+.jumbotron {
+  background-color: transparent !important;
+  padding: 2rem !important;
+}
+
+.footer {
+  color: #999999;
+  font-family: 'Belleza', sans-serif !important;
+  font-size: 0.9rem;
+}
+.copyright-statement {
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration:none;
+  color: #999;
+}
+
+a:hover {
+  color: #000;
+  transition: color 500ms ease;
+  text-decoration:none;
+}
+
+.site-credits {
+  font-size: 0.75rem;
 }
 
 .ccco-header {
-  font-family: 'Belleza' !important;
+  font-family: 'Belleza', sans-serif !important;
   min-width: 340px;
 
   .ccco-logo {
@@ -135,7 +157,6 @@ img {
   p:before {
     content: "Center City Chamber Orchestra"
   }
-  
 
 }
 

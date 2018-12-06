@@ -11,15 +11,20 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
-      {posts.map(({ post }, i) => (
-        <Post
-          data={post}
-          options={{
-            isIndex: true,
-          }}
-          key={i}
-        />
-      ))}
+      <div className="row">
+        <div className="col-md-12">
+          <div className="jumbotron d-flex justify-content-center">
+            <iframe
+              width="853"
+              height="480"
+              src="https://www.youtube.com/embed/xuLFTrfizzM"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />{' '}
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

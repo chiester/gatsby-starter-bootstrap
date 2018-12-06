@@ -29,28 +29,26 @@ class Navi extends React.Component {
   render() {
     const { location, title } = this.props
     return (
-      <div className="container">
-        <Navbar className="ccco-header" color="light" light expand="md">
-          <NavbarBrand href="/">
-            <img
-              className="ccco-logo"
-              src="https://hiester.imgix.net/CCOsquare.png"
-            />
-            <p className="navbar-brand mb-0" />
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <Link to="/About/">About Us</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/Performances/">Performances</Link>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+      <Navbar className="ccco-header" color="light" light expand="md">
+        <NavbarBrand href="/">
+          <img
+            className="ccco-logo"
+            src="https://hiester.imgix.net/CCOsquare.png"
+          />
+          <p className="navbar-brand mb-0" />
+        </NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <Link to="/About/">About Us</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/Performances/">Performances</Link>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     )
   }
 }
