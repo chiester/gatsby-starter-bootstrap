@@ -28,7 +28,6 @@ class Performances extends React.Component {
               <CardBody>
                 <CardTitle className="pt-2">
                   <strong>Upcoming Performance</strong>
-                  Ad
                 </CardTitle>
                 <CardSubtitle className="pb-4">Save the date!</CardSubtitle>
                 <CardText>
