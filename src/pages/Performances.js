@@ -64,7 +64,7 @@ class Performances extends React.Component {
                     String Quartet No. 4, Op. 18, No. 4 by Ludwig van Beethoven
                   </p>
 
-                  <p>Brass Quintet no. 1, Op. 5 by Victor Ewald</p>
+                  <p>Serenade for Winds, op. 44 by Antonín Dvořák</p>
                 </CardText>
 
                 <a
